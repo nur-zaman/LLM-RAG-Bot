@@ -32,6 +32,7 @@ async def on_message_create(event):
 async def get_response(ctx: SlashContext, input_text: str):
     await ctx.defer()
     response = await data_querying(input_text)
+    response = f'Input Query: {input_text}\n\n{response}'
     await ctx.send(response)
 
 
