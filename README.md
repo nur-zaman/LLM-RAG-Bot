@@ -16,8 +16,8 @@ pip install -r requirements.txt
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/rag-discord-bot.git
-cd rag-discord-bot
+git clone https://github.com/nur-zaman/LLM-RAG-Bot.git
+cd LLM-RAG-Bot
 ```
 
 2. Create a virtual environment (optional but recommended):
