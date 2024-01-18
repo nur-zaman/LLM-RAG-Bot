@@ -7,9 +7,6 @@ This Discord bot utilizes the Retrieval-Augmented Generation (RAG) approach to e
 Before running the bot, make sure you have the following dependencies installed:
 
 - Python 3.10 or higher
-```bash
-pip install -r requirements.txt
-```
 
 ## Getting Started
 
@@ -46,7 +43,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-5. Create a `.env` file in the project root directory and add your Discord bot token:
+5. Rename the `.env.example` file to `.env` in the project root directory and add your tokens and api keys:
 
 ```env
 DISCORD_BOT_TOKEN=your_bot_token_here
@@ -73,16 +70,11 @@ The bot responds to a single slash command:
 - **Options:**
   - `input_text` (required): The input text for the query.
 
-## Knowledge Base Management
+### `/updatedb`
 
-The `manage_embedding.py` script is responsible for loading and managing the knowledge base. It uses the `llama_index` library to create and refresh the index based on the data in the "data" directory.
-
-## Querying
-
-The `querying.py` script defines the function for querying the knowledge base using the RAG approach. It loads the index and queries it with the provided input text.
+- **Description:** Updates your information database
 
 ## Additional Notes
 
-- The `run.bat` file contains the command to start the bot (`python bot.py`).
-
-- Check [llama_index documentation]([https://llama.ai/docs/llama_index/](https://docs.llamaindex.ai/en/stable/)https://docs.llamaindex.ai/en/stable/) for assistance.
+- [llama_index documentation]([https://llama.ai/docs/llama_index/](https://docs.llamaindex.ai/en/stable/)https://docs.llamaindex.ai/en/stable/).
+- [refreshing-private-data-sources-with-llamaindex](https://betterprogramming.pub/refreshing-private-data-sources-with-llamaindex-document-management-1d1f1529f5eb).

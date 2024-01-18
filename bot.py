@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import os
 
 from querying import data_querying
+from manage_embedding import update_index
 
 load_dotenv()
 
@@ -34,6 +35,17 @@ async def get_response(ctx: SlashContext, input_text: str):
     response = await data_querying(input_text)
     response = f'Input Query: {input_text}\n\n{response}'
     await ctx.send(response)
+
+@slash_command(name="updatedb", description="Update your information database :)")
+async def updated_database(ctx: SlashContext):
+    await ctx.defer()
+    update = await update_index()
+    if update:
+        response = f'Updated {sum(update)} document chunks'
+    else:
+        response = f'Error updating index'
+    await ctx.send(response)
+
 
 
 bot.start(os.getenv("DISCORD_BOT_TOKEN"))
