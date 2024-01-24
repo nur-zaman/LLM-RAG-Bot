@@ -2,6 +2,8 @@
 
 This Discord bot utilizes the Retrieval-Augmented Generation (RAG) approach to enhance the output of a large language model by referencing an authoritative knowledge base outside of its training data sources. The bot is designed to interact with users through Discord slash commands, allowing them to query an underlying knowledge base for relevant information.
 
+<img src="demo/demo_query.gif">
+
 ## Prerequisites
 
 Before running the bot, make sure you have the following dependencies installed:
