@@ -78,5 +78,5 @@ The bot responds to a single slash command:
 
 ## Additional Notes
 
-- [llama_index documentation]([https://llama.ai/docs/llama_index/](https://docs.llamaindex.ai/en/stable/)https://docs.llamaindex.ai/en/stable/).
+- [llamaIndex documentation](https://docs.llamaindex.ai/en/stable/).
 - [refreshing-private-data-sources-with-llamaindex](https://betterprogramming.pub/refreshing-private-data-sources-with-llamaindex-document-management-1d1f1529f5eb).
